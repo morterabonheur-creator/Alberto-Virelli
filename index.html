@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VÉRTICE | Relojes</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+header {
+  text-align: center;
+  padding: 60px 20px;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  letter-spacing: 4px;
+}
+header p {
+  opacity: 0.7;
+}
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.price {
+  font-size: 20px;
+  margin: 10px 0;
+}
+button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>VÉRTICE</h1>
+  <p>Marca el momento donde cambias todo</p>
+</header>
+
+<section class="section">
+  <h2>Colección</h2>
+  <div class="products">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300" alt="Reloj Negro">
+      <h3>Negro Minimal</h3>
+      <p class="price">$399 MXN</p>
+      <button onclick="buy()">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300" alt="Reloj Plateado">
+      <h3>Silver Edge</h3>
+      <p class="price">$449 MXN</p>
+      <button onclick="buy()">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300" alt="Reloj Dorado">
+      <h3>Golden Power</h3>
+      <p class="price">$499 MXN</p>
+      <button onclick="buy()">Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>¿Por qué VÉRTICE?</h2>
+  <p>Diseñado para hombres que quieren destacar. Cada reloj representa disciplina, enfoque y evolución.</p>
+</section>
+
+<footer>
+  © 2026 VÉRTICE - Todos los derechos reservados
+</footer>
+
+<script>
+function buy() {
+  alert("Contáctanos por WhatsApp para completar tu compra");
+}
+</script>
+
+</body>
+</html>
